@@ -13,6 +13,7 @@ export class MenuComponent {
 
   menuItem = [
     {label: "Portefolio", url:"/portefolio"},
+    {label: "Compétences", url:"/competences"},
     {label: "À propos", url:"/about"},
     {label: "Contact", url:"/contact"}
   ];
