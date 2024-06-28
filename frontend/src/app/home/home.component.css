@@ -1,0 +1,7 @@
+.special-text {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 5px white;
+  }
+  

@@ -1,32 +1,44 @@
 <style>
-  main{
-    margin:auto;
-    width: 80%;
-    height: 80%;
-    backdrop-filter: blur(16px);
-  }
-  .identity{
-    width: 100%;
-    height: 50%;
-    background-color: yellow;
-  }
-  .pp{
-    width: 50%;
-    height: 100%;
-  }
-  .name{
-    position: fixed;
-    left: 50%;
-    width: 50%;
-    height: 100;
-    background-color: red;
-  }
+  main {
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  backdrop-filter: blur(16px);
+}
 
-  .pp img{
-    border-radius: 50%;
-    height: 100%;
-    margin-left: 20%;
-  }
+.identity {
+  display: flex; /* Utiliser Flexbox pour diviser en deux colonnes */
+  width: 100%;
+  height: 50%;
+}
+
+.pp, .name {
+  flex: 1; /* Chaque division prend 50% de la largeur */
+  height: 100%;
+}
+
+.pp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pp img {
+  border-radius: 50%;
+  height: 100%;
+}
+
+.name {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: center;
+}
+.name p {
+  margin: 0; /* Supprimez la marge par défaut du paragraphe */
+  font-size: 8vw; /* Utiliser une unité viewport pour ajuster la taille de la police */
+  line-height: 1; /* Assurer que le texte prend toute la hauteur disponible */
+}
 </style>
 
 <main>
@@ -35,7 +47,8 @@
       <img src="../../assets/pplinkenin.jpeg">
     </div>
     <div class="name">
-
+      <p class="special-text">HARIS</p>
+      <p class="special-text">SKIKDI</p>
     </div>
   </div>
   <div class="about">
