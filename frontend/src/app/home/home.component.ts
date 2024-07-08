@@ -10,4 +10,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class HomeComponent {
 title = 'home';
+description = "Mon expertise actuelle inclut le C, le C++ et du JS (nodeJS via nest et svelte pour le front). Cependant, je reste ouvert à d'autres opportunités dans diverses branches du développement, car je suis toujours à la recherche de nouveaux défis et que ma formation m'a appris en premier lieu à être autonome et à apprendre rapidement.";
 }
