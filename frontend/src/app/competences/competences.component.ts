@@ -9,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class CompetencesComponent {
 
+  icons = [
+    {src : '../../assets/angularIcon.png', alt:'angularIcon'},
+    {src : '../../assets/cplus.png', alt:'cplusIcon'},
+    {src : '../../assets/dockerIcon.png', alt:'dockerIcon'},
+    {src : '../../assets/jsIcon.png', alt:'jsIcon'},
+    {src : '../../assets/nestIcon.png', alt:'nestIcon'},
+    {src : '../../assets/postgressIcon.png', alt:'pgIcon'},
+    {src : '../../assets/svelteIcon.png', alt:'svelteIcon'},
+  ];
+
+  
+
 }
