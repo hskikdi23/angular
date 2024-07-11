@@ -1,1 +1,98 @@
 <p>contact works!</p>
+
+<style>
+    main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.contact-form {
+  flex: 2;
+}
+
+.contact-form h1 {
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.contact-links a {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.contact-links img {
+  width: 100%;
+  height: auto;
+}
+</style>
+<main>
+    <div class="contact-form">
+      <h1>Me contacter</h1>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="10" required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+        <img src="assets/linkedin-logo.png" alt="LinkedIn">
+      </a>
+      <a href="mailto:youremail@example.com">
+        <img src="assets/email-logo.png" alt="Email">
+      </a>
+    </div>
+  </main>

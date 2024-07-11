@@ -5,6 +5,7 @@
   width: 80%;
   height: 80%;
   backdrop-filter: blur(16px);
+  overflow-y: scroll;
 }
 
 main p {
@@ -14,14 +15,21 @@ main p {
 .compTab{
     height: 80%;
     width: 100%;
-    background-color: brown;
     display: flex;
+
     flex-wrap: wrap;
-    justify-content: space-between;
 }
-img{
-    height: 200px;
-    width: 200px;
+
+.compTab img {
+
+    flex: 1 0 calc(33.333% - 20px);
+    max-width: 30%;
+    height: 220px;
+    width: 150px;
+    object-fit: cover; /* Ajuste l'image pour qu'elle couvre l'espace disponible sans déformation */
+    margin: 10px; /* Ajoute de l'espace autour des images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
 }
 
 
