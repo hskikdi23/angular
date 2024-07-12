@@ -1,4 +1,3 @@
-<p>contact works!</p>
 
 <style>
     main {
@@ -21,6 +20,8 @@
 
 .contact-form h1 {
   margin-bottom: 20px;
+  color: white;
+  font-family: 'Oswald';
 }
 
 .contact-form form {
@@ -58,23 +59,53 @@
 .contact-links {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; /* Alignement des éléments à gauche */
   gap: 20px;
   flex: 1;
 }
 
-.contact-links a {
-  display: block;
-  width: 40px;
-  height: 40px;
+.contact-item {
+  display: flex;
+  align-items: center;
 }
 
-.contact-links img {
-  width: 100%;
-  height: auto;
+.contact-item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.contact-item a,
+.contact-item span {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+}
+.contact-item a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-item span {
+  color: #333; /* Couleur pour l'email, non cliquable */
 }
 </style>
 <main>
+  <div class="contact-links">
+    <div class="contact-item">
+      <a href="https://www.linkedin.com/in/haris-skikdi-8aa6912b0/" target="_blank">
+        <img src="assets/linkedin.png" alt="LinkedIn">
+        <span>{{linkedin}}</span>
+      </a>
+    </div>
+    <div class="contact-item">
+      <img src="assets/email-logo.png" alt="Email">
+      <span>{{email}}</span>
+    </div>
+  </div>
     <div class="contact-form">
       <h1>Me contacter</h1>
       <form>
@@ -87,12 +118,5 @@
         <button type="submit">Send</button>
       </form>
     </div>
-    <div class="contact-links">
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
-        <img src="assets/linkedin-logo.png" alt="LinkedIn">
-      </a>
-      <a href="mailto:youremail@example.com">
-        <img src="assets/email-logo.png" alt="Email">
-      </a>
-    </div>
-  </main>
+    
+</main>
