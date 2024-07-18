@@ -1,0 +1,9 @@
+{
+    "angular": "Angular est un cadre robuste de Google utilisé pour créer des applications web dynamiques. J'ai créer ce site-cv avec Angular, en exploitant son architecture modulaire et son intégration avec TypeScript pour créer un site facile à maintenir.",
+    "cplus": "C++ est un langage de programmation puissant pour les logiciels système et applicatif. Pendant mes études à 42, j'ai développé une solide compréhension de C++ pour les applications critiques en termes de performance.",
+    "docker": "Docker simplifie le déploiement de logiciels en conteneurisant les applications. À 42, j'ai utilisé Docker pour garantir des environnements cohérents à différents stades de développement.",
+    "javascript": "JavaScript est essentiel pour créer des pages web interactives. À 42, j'ai perfectionné mes compétences en JavaScript pour créer des interfaces réactives et conviviales.",
+    "nest": "NestJS est un cadre pour construire des applications côté serveur efficaces. Mon temps à 42 comprenait un travail approfondi avec NestJS pour développer des services backend évolutifs.",
+    "postgresql": "PostgreSQL est une base de données relationnelle open-source puissante. J'ai appris à utiliser PostgreSQL à 42 pour gérer et interroger efficacement des ensembles de données complexes.",
+    "svelte": "Svelte est un cadre moderne pour créer des applications web rapides. À 42, j'ai exploré l'approche innovante de Svelte pour créer des interfaces utilisateur hautement performantes."
+}  

@@ -17,6 +17,9 @@
   }
   .skill-description{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
     height: 100%;
     width: 30%;
   }
@@ -41,19 +44,25 @@
   height: auto; /* La hauteur est ajustée proportionnellement */
   object-fit: cover; /* Ajuste l'image pour couvrir l'espace sans déformation */
 }
-  h1 p{
+p{
      color : white;
+     margin-left: 19px;
   }
+h1{
+  color: aliceblue;
+  font-family: 'Oswald';
+}
 </style>
 
 <main>
   <div class="skill-grid">
-    <div *ngFor="let icon of icons" class="skill">
+    <div *ngFor="let icon of icons" class="skill" (click)="onSelect(icon.description)">
       <img src={{icon.src}} alt={{icon.alt}}>
       <!-- <p> {{icon.alt}}</p> -->
     </div>
   </div>
   <div class="skill-description">
     <h1>What can I do</h1>
+    <p *ngIf="selectedDescription">{{ selectedDescription }}</p>
   </div>
 </main>

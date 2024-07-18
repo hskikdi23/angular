@@ -20,3 +20,34 @@
     font-style: normal italic;
 }
 
+/* Personnaliser la scrollbar pour les navigateurs Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Largeur de la scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Couleur de l'arrière-plan de la scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Couleur de la partie mobile de la scrollbar */
+    border-radius: 10px; /* Arrondir les coins de la scrollbar */
+    border: 3px solid #f1f1f1; /* Espace autour de la partie mobile de la scrollbar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Couleur de la partie mobile de la scrollbar au survol */
+}
+
+/* Personnaliser la scrollbar pour Firefox */
+html {
+    scrollbar-width: thin; /* Largeur de la scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Couleur de la partie mobile et de l'arrière-plan de la scrollbar */
+}
+
+/* Personnaliser la scrollbar pour IE et Edge */
+body {
+    -ms-overflow-style: -ms-autohiding-scrollbar; /* Style de la scrollbar pour IE et Edge */
+}
+
+
