@@ -40,6 +40,22 @@
   line-height: 1; /* Assurer que le texte prend toute la hauteur disponible */
 }
 
+.download-button {
+  margin-top: 10px; /* Espace au-dessus du bouton */
+  padding: 10px 20px; /* Espacement interne */
+  font-size: 1.2em; /* Taille du texte */
+  color: white; /* Couleur du texte */
+  background-color: #007bff; /* Couleur de fond */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Bordure arrondie */
+  text-decoration: none; /* Supprimer la décoration de texte */
+  cursor: pointer; /* Curseur pointeur */
+}
+
+.download-button:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+}
+
 .about p{
 
   color : white;
@@ -61,10 +77,11 @@
     <div class="name">
       <p class="special-text">HARIS</p>
       <p class="special-text">SKIKDI</p>
+      <a href="../../assets/Développeur web.pdf" download class="download-button">Télécharger mon CV</a>
     </div>
   </div>
   <div class="about">
-    <h2> À propos de moi</h2>
+    <h2> Développeur Web</h2>
     <p> {{description}}</p>
 
   </div>
